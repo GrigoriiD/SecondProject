@@ -1,0 +1,297 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Black.ttf'),
+        url('../fonts/Montserrat-Black.woff2'), 
+        url('../fonts/Montserrat-Black.woff');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-BlackItalic.ttf'),
+        url('../fonts/Montserrat-BlackItalic.woff2'), 
+        url('../fonts/Montserrat-BlackItalic.woff');
+    font-weight: 900;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-ExtraBold.ttf'),
+        url('../fonts/Montserrat-ExtraBold.woff2'), 
+        url('../fonts/Montserrat-ExtraBold.woff');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-ExtraBoldItalic.ttf'),
+        url('../fonts/Montserrat-ExtraBoldItalic.woff2'), 
+        url('../fonts/Montserrat-ExtraBoldItalic.woff');
+    font-weight: 800;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.ttf'),
+        url('../fonts/Montserrat-Bold.woff2'), 
+        url('../fonts/Montserrat-Bold.woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-BoldItalic.ttf'),
+        url('../fonts/Montserrat-BoldItalic.woff2'), 
+        url('../fonts/Montserrat-BoldItalic.woff');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-SemiBold.ttf'),
+        url('../fonts/Montserrat-SemiBold.woff2'), 
+        url('../fonts/Montserrat-SemiBold.woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-SemiBoldItalic.ttf'),
+        url('../fonts/Montserrat-SemiBoldItalic.woff2'), 
+        url('../fonts/Montserrat-SemiBoldItalic.woff');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Medium.ttf'),
+        url('../fonts/Montserrat-Medium.woff2'), 
+        url('../fonts/Montserrat-Medium.woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-MediumItalic.ttf'),
+        url('../fonts/Montserrat-MediumItalic.woff2'), 
+        url('../fonts/Montserrat-MediumItalic.woff');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf'),
+        url('../fonts/Montserrat-Regular.woff2'), 
+        url('../fonts/Montserrat-Regular.woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-RegularItalic.ttf'),
+        url('../fonts/Montserrat-RegularItalic.woff2'), 
+        url('../fonts/Montserrat-RegularItalic.woff');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Light.ttf'),
+        url('../fonts/Montserrat-Light.woff2'), 
+        url('../fonts/Montserrat-Light.woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-LightItalic.ttf'),
+        url('../fonts/Montserrat-LightItalic.woff2'), 
+        url('../fonts/Montserrat-LightItalic.woff');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-ExtraLight.ttf'),
+        url('../fonts/Montserrat-ExtraLight.woff2'), 
+        url('../fonts/Montserrat-ExtraLight.woff');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-ExtraLightItalic.ttf'),
+        url('../fonts/Montserrat-ExtraLightItalic.woff2'), 
+        url('../fonts/Montserrat-ExtraLightItalic.woff');
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Thin.ttf'),
+        url('../fonts/Montserrat-Thin.woff2'), 
+        url('../fonts/Montserrat-Thin.woff');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-ThinItalic.ttf'),
+        url('../fonts/Montserrat-ThinItalic.woff2'), 
+        url('../fonts/Montserrat-ThinItalic.woff');
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Black.ttf'),
+        url('../fonts/Raleway-Black.woff2'), 
+        url('../fonts/Raleway-Black.woff');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-BlackItalic.ttf'),
+        url('../fonts/Raleway-BlackItalic.woff2'), 
+        url('../fonts/Raleway-BlackItalic.woff');
+    font-weight: 900;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-ExtraBold.ttf'),
+        url('../fonts/Raleway-ExtraBold.woff2'), 
+        url('../fonts/Raleway-ExtraBold.woff');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-ExtraBoldItalic.ttf'),
+        url('../fonts/Raleway-ExtraBoldItalic.woff2'), 
+        url('../fonts/Raleway-ExtraBoldItalic.woff');
+    font-weight: 800;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Bold.ttf'), 
+        url('../fonts/Raleway-Bold.woff2'), 
+        url('../fonts/Raleway-Bold.woff') ;
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-BoldItalic.ttf'), 
+        url('../fonts/Raleway-BoldItalic.woff2'), 
+        url('../fonts/Raleway-BoldItalic.woff') ;
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-SemiBold.ttf'), 
+        url('../fonts/Raleway-SemiBold.woff2'), 
+        url('../fonts/Raleway-SemiBold.woff') ;
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-SemiBoldItalic.ttf'), 
+        url('../fonts/Raleway-SemiBoldItalic.woff2'), 
+        url('../fonts/Raleway-SemiBoldItalic.woff') ;
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Medium.ttf'),
+        url('../fonts/Raleway-Medium.woff2'), 
+        url('../fonts/Raleway-Medium.woff') ;
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-MediumItalic.ttf'), 
+        url('../fonts/Raleway-MediumItalic.woff2'), 
+        url('../fonts/Raleway-MediumItalic.woff') ;
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.woff2'),
+         url('../fonts/Raleway-Regular.woff') ,
+         url('../fonts/Raleway-Regular.ttf')
+        ;
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-RegularItalic.ttf'),
+        url('../fonts/Raleway-RegularItalic.woff2'), 
+        url('../fonts/Raleway-RegularItalic.woff');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Light.ttf'),
+        url('../fonts/Raleway-Light.woff2'), 
+        url('../fonts/Raleway-Light.woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-LightItalic.ttf'),
+        url('../fonts/Raleway-LightItalic.woff2'), 
+        url('../fonts/Raleway-LightItalic.woff');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-ExtraLight.ttf'),
+        url('../fonts/Raleway-ExtraLight.woff2'), 
+        url('../fonts/Raleway-ExtraLight.woff');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-ExtraLightItalic.ttf'),
+        url('../fonts/Raleway-ExtraLightItalic.woff2'), 
+        url('../fonts/Raleway-ExtraLightItalic.woff');
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Thin.ttf'),
+        url('../fonts/Raleway-Thin.woff2'), 
+        url('../fonts/Raleway-Thin.woff');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-ThinItalic.ttf'),
+        url('../fonts/Raleway-ThinItalic.woff2'), 
+        url('../fonts/Raleway-ThinItalic.woff');
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Thin.ttf'),
+        url('../fonts/Roboto-Thin.woff2'), 
+        url('../fonts/Roboto-Thin.woff');
+    font-weight: 100;
+    font-style: normal;
+}

@@ -1,0 +1,1945 @@
+@import "fonts";
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.header {
+    margin: 0 auto;
+    max-width: 1920px;
+    background-image: url(../img/header0.jpg);
+    background-color: black;
+    min-height: 1025px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0 0 0;
+    box-sizing: border-box;
+     transition: all 0.5s ease;
+	// transition: background-image 0.5s ease;
+    &__logo {
+        margin: 0 130px 0 0;
+    }
+    &__top-inner {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 263px 0;
+        box-sizing: border-box;
+        padding: 0 0 0 0;
+        align-items: center;    
+        position: relative;
+    }
+
+    &__form {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    &__basket-btn {
+        display: none;
+    }
+
+    &__basket-link {
+        width: 18px;
+        height: 24px;
+        display: block;
+        &:hover .header__basket-img {
+            fill: darkgoldenrod;
+        }
+
+        &:active .header__basket-img {
+            fill: wheat;
+        }
+    }
+
+    &__basket-img {
+        fill: #fff;
+        transition: fill 500ms ease-in-out;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__content-container {
+        margin: 0 auto;
+        max-width: 1620px;
+    }
+
+    &__content-label-right {
+        display: block;
+        margin: 0;
+    }
+
+    &__content-label-left {
+        display: block;
+        margin: 0;
+    }
+
+    &__content-center {
+        width: 595px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.logo {
+    width: 181px;
+
+    &:hover &__link {
+        color: darkgoldenrod;
+    }
+
+    &:active &__link {
+        color: wheat;
+    }
+
+    &__link {
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        transition: color 500ms ease-in-out;
+    }
+
+    &__img {
+        fill: currentColor;
+    }
+
+    &__title {
+        font-family: 'Raleway';
+        font-size: 34px;
+        font-weight: 400;
+        text-align: right;
+    }
+}
+.menu {
+    min-height: 96px;
+    padding-top: 40px;
+    box-sizing: border-box;
+    &_search{
+        visibility: hidden;
+    }
+    // display: none;
+    &__items {
+        display: flex;
+        align-self: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 0 19px ;
+        display: block;
+        :hover {
+            color: darkgoldenrod;
+        }
+
+        :active {
+            color: wheat;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #fff;
+
+        font-family: "Montserrat";
+        line-height: 1.2;
+        font-weight: 400;
+        transition: color 500ms ease-in-out;
+    }
+    &__mobile{
+        display: none;
+        &-checked{
+            display: none;
+        }
+    }
+}
+
+.search {
+    position: absolute;
+    top: -10px;
+    left: -500px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 30px;
+    outline: none;
+    background-color: rgb(172, 172, 172);
+    width: 500px;
+    min-height: 45px;
+    font-size: 25px;
+    fill: #fff;
+    color: #fff;
+    font-family: "Montserrat";
+    line-height: 1.2;
+    font-weight: 400;
+    &_none{
+        display: none;
+    }
+    &__label {
+        padding: 0 0 0 28px;
+        position: relative;
+
+    }
+
+    &__link {
+        width: 24px;
+        height: 24px;
+        display: block;
+        &:hover .search__img {
+            fill: darkgoldenrod;
+        }
+
+        &:active .search__img {
+            fill: wheat;
+        }
+    }
+
+    &__img {
+        fill: white;
+    }
+
+}
+
+.button {
+    display: flex;
+    width: 170px;
+    padding: 10px;
+    outline: none;
+    word-break: break-all;
+    text-transform: uppercase;
+    background-color: rgb(153, 134, 117);
+    border: none;
+    border-radius: 3px;
+    border: 2px solid transparent;
+    transition: background-color 500ms ease-in-out;
+    word-break: break-all;
+
+    &:hover {
+        background-color: transparent;
+        border: 2px solid rgb(255, 255, 255);
+        box-sizing: border-box;
+    }
+
+    &:hover .button__txt {
+        color: white;
+    }
+
+    &:active {
+        background-color: rgb(153, 134, 117);
+        transition: background-color 100ms ease-in-out;
+    }
+
+    &__txt {
+        margin: auto;
+        font-size: 14px;
+        font-family: "Raleway";
+        color: rgb(255, 255, 255);
+        line-height: 1.643;
+        text-align: center;
+        font-weight: 400;
+    }
+}
+
+.header {
+    &__btn-right {
+        display: none;
+    }
+
+    &__btn-left {
+        display: none;
+    }
+
+    &__img-right {
+        fill: #fff;
+        transition: fill 500ms ease-in-out;
+    }
+
+    &__img-left {
+        fill: #fff;
+        transition: fill 500ms ease-in-out;
+    }
+
+    &__btn-left-link {
+        width: 40px;
+        height: 73px;
+        display: block;
+        &:hover .header__img-left {
+            fill: darkgoldenrod
+        }
+
+        &:active .header__img-left {
+            fill: wheat;
+        }
+
+    }
+
+    &__btn-right-link {
+        width: 40px;
+        height: 73px;
+        display: block;
+        &:hover .header__img-right {
+            fill: darkgoldenrod
+        }
+
+        &:active .header__img-right {
+            fill: wheat;
+        }
+    }
+
+    &__top-title {
+        font-size: 36px;
+        font-family: "Raleway";
+        color: rgb(255, 255, 255);
+        line-height: 1.2;
+        text-align: center;
+        animation: top-title 2s 1;
+        &_black{
+            color: rgb(5, 65, 102);
+        }
+    }
+
+    &__title {
+        font-size: 51px;
+        font-family: "Raleway";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: center;
+        font-weight: 600;
+        margin: 0px 0 15px 0;
+        animation: title 2s 1;
+        &_black{
+            color: rgb(5, 65, 102);
+        }
+    }
+
+    &__description {
+        font-size: 16px;
+        font-family: "Raleway";
+        color: rgb(255, 255, 255);
+        line-height: 1.5;
+        text-align: center;
+        margin: 0 0 51px 0;
+        font-weight: 700;
+        animation: description 2s 1;
+        &_black{
+            color: rgb(5, 17, 84);
+        }
+    }
+    &__button{
+        animation: button 2s 1;
+    }
+    &__decor {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-self: flex-end;
+        margin: 320px 0 40px 0;
+
+        &-items {
+            width: 16px;
+            height: 16px;
+            background-color: rgb(148, 144, 144);
+            border: 5px solid transparent;
+            border-radius: 50%;
+            margin: 0 5px;
+            box-sizing: border-box;
+
+            &:hover {
+                background-color: transparent;
+                border: 2px solid wheat;
+                transform: scale(1.2);
+            }
+        }
+
+    }
+
+}
+@keyframes top-title {
+    0%{
+        transform: scale(0.6);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1.0);
+    }
+}
+@keyframes title{
+    0%{
+        transform: scale(0.6);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1.0);
+    }
+}
+@keyframes description {
+    0%{
+        transform: scale(0.6);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1.0);
+    }
+}
+@keyframes button {
+    0%{
+        transform: scale(0.6);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1.0);
+    }
+}
+.header_fixed-mar{
+    margin: 360px 0 0 145px;
+}
+.header_fixed{
+    z-index: 3;
+    position: fixed;
+	left: 0;
+	top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
+    animation: fixed 1s;
+    background-position: center;
+    margin: 0 auto;
+    background-image: url(../img/Background-word-press.jpg);
+}
+.header_unfixed{
+    visibility: hidden;
+    transition: all 1000ms ease;   
+    animation: fixedd 1s;
+}
+@keyframes fixed {
+    0%{
+        top: -80px;
+        transform: scale(1)
+    }
+    100%{
+        top: 0;
+        transform: scale(1.0);
+    }
+}
+@keyframes fixedd {
+    100%{
+        top: -90px;
+        opacity: 0;
+        transform: scale(1.0)
+    }
+}
+.active{
+    display: flex;
+    // transition: all 0.5s ease;
+    &__decore{
+        background-color: transparent;
+        border: 2px solid wheat;
+        transform: scale(1.2);
+        transition: all 0.5s ease;
+    }
+}
+.section-preview {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    padding: 80px 0 80px 0;
+}
+
+.preview {
+    width: 270px;
+
+    &__img {
+        fill: rgb(85, 85, 85);
+        text-align: center;
+        transition: fill 400ms ease-in-out;
+    }
+
+    &__link {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 22px;
+        font-family: "Raleway";
+        color: rgb(85, 85, 85);
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 28px 0 20px 0;
+        transition: color 400ms ease-in-out;
+    }
+
+    &__description {
+        text-align: center;
+        margin: 0 0 30px 0;
+        font-size: 14px;
+        font-family: "Montserrat";
+        color: rgb(140, 140, 140);
+        line-height: 1.714;
+        text-align: center;
+        transition: color 400ms ease-in-out;
+    }
+
+    &__decor {
+        width: 70px;
+        height: 3px;
+        background-color: rgb(220, 220, 215);
+        transition: background-color 400ms ease-in-out;
+    }
+
+    &__link:hover .preview__decor {
+        background-color: rgb(199, 178, 153);
+    }
+
+    &__link:hover .preview__img {
+        fill: rgb(199, 178, 153);
+    }
+
+    &__link:hover .preview__title {
+        color: rgb(199, 178, 153);
+    }
+
+    &__link:hover .preview__description {
+        color: rgb(199, 178, 153);
+    }
+
+    &__link:active .preview__decor {
+        background-color: rgb(140, 140, 140);
+        ;
+    }
+
+    &__link:active .preview__img {
+        fill: rgb(140, 140, 140);
+        ;
+    }
+
+    &__link:active .preview__title {
+        color: rgb(140, 140, 140);
+        ;
+    }
+
+    &__link:active .preview__description {
+        color: rgb(140, 140, 140);
+    }
+
+}
+
+.realization {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(250, 249, 249);
+
+    &__title {
+        margin: 80px 0 20px 0;
+    }
+
+    &__description {
+        font-size: 16px;
+        font-family: "Montserrat";
+        color: rgb(140, 140, 140);
+        line-height: 1.75;
+        text-align: center;
+        width: 757px;
+        margin: 0 0 40px 0;
+    }
+
+    &__bg-img {
+        width: 1230px;
+        height: 480px;
+        background-image: url(../img/Realization-center.jpg),
+            url(../img/Realization-left.jpg),
+            url(../img/Realization-right.jpg);
+        background-size: 62% 100%, 64% 85%, 64% 85%;
+        background-position: bottom center, bottom left, bottom right;
+        background-repeat: no-repeat;
+    }
+}
+
+.title {
+    font-size: 30px;
+    font-family: "Raleway";
+    color: rgb(85, 85, 85);
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.word-press {
+    background-image: url(../img/Background-word-press.jpg);
+    width: 100%;
+    background-repeat: repeat-y;
+    background-position: center;
+
+    &__title {
+        font-size: 28px;
+        font-family: "Raleway";
+        color: rgb(255, 255, 255);
+        line-height: 1.2;
+        font-weight: 300;
+        margin: 0;
+    }
+
+    &--color {
+        font-weight: 300;
+        font-size: 28px;
+        font-family: "Raleway";
+        color: rgb(199, 178, 153);
+        line-height: 1.2;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 0 50px 0;
+    }
+
+    &__description {
+        font-size: 18px;
+        font-family: "Montserrat";
+        color: rgb(97, 88, 85);
+        line-height: 1.2;
+        margin: 0;
+    }
+    &__btn{
+        margin: 0;
+    }
+}
+
+.latest {
+    &__title {
+        margin: 72px 0 16px 0;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__description {
+        font-size: 16px;
+        font-family: "Montserrat";
+        color: rgb(140, 140, 140);
+        line-height: 1.75;
+        text-align: center;
+        width: 757px;
+        margin: 0 0 33px 0;
+        box-sizing: border-box;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 40px 0;
+    }
+
+    &__button {
+        &--padding {
+            display: flex;
+            padding: 5px 25px;
+        }
+
+        display: flex;
+        padding: 5px 17px;
+        border: 1px solid rgb(220, 220, 220);
+        background-color: transparent;
+        margin: 0 0 0 10px;
+        box-sizing: border-box;
+        border-radius: 3px;
+        transition: background-color 500ms ease-in-out;
+        font-size: 14px;
+        font-family: "Raleway";
+        color: rgb(140, 140, 140);
+        line-height: 1.5;
+        font-weight: 600;
+
+        &:hover {
+            background-color: rgb(153, 134, 117);
+            color: white;
+        }
+
+        &:active {
+            background-color: rgb(93, 67, 45);
+            transition: background-color 100ms ease-in-out;
+            color: white;
+        }
+
+        &-txt {
+            margin: auto;
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__img {
+        overflow: hidden;
+        transition: filter 500ms ease-in-out;
+    }
+
+    &__item {
+        background-color: rgb(248, 247, 247);
+        position: relative;
+        margin: 0 0 30px 0;
+        width: 370px;
+        transition: background-color 500ms ease-in-out;
+
+        &::before {
+            content: "";
+            position: absolute;
+            border: 20px solid transparent;
+            border-bottom: 15px solid rgb(245, 241, 241);
+            top: 205px;
+            left: 20px;
+            z-index: 1;
+            transition: border-bottom 500ms ease-in-out, top 500ms ease-in-out;
+
+        }
+
+        &:hover::before {
+            border-bottom: 15px solid rgb(54, 47, 45);
+            filter: blur(2px);
+            -webkit-filter: blur(1px);
+            top: 209px;
+            transition: filter 500ms ease-in-out, border-bottom 500ms ease-in-out, top 500ms ease-in-out;
+        }
+
+        &:hover {
+            background-color: rgb(54, 47, 45);
+        }
+
+        &:hover .latest__item-btn-share {
+            display: block;
+        }
+
+        &:hover .latest__item-btn-search {
+            display: block;
+        }
+
+        &:hover .latest__img {
+            filter: blur(2px);
+            -webkit-filter: blur(2px);
+            z-index: 1;
+        }
+
+        &:hover .latest__item-title {
+            color: rgb(209, 209, 209);
+        }
+
+        &:hover .latest__item-subtitle {
+            color: rgb(199, 178, 153);
+        }
+    }
+
+    &__item-title {
+        display: block;
+        font-size: 20px;
+        font-family: "Raleway";
+        color: rgb(199, 178, 153);
+        line-height: 1.2;
+        text-align: left;
+        padding: 29px 29px 0 29px;
+    }
+
+    &__item-subtitle {
+        display: block;
+        font-size: 14px;
+        font-family: "Montserrat";
+        color: rgb(209, 209, 209);
+        line-height: 1.429;
+        text-align: left;
+        padding: 0 29px 29px 29px;
+    }
+
+    &__item-btn {
+        display: none;
+    }
+
+    &__item-btn-share {
+        margin: 0;
+        position: absolute;
+        top: 107px;
+        left: 142px;
+        fill: #fff;
+        display: none;
+    }
+
+    &__item-btn-search {
+        margin: 0;
+        position: absolute;
+        top: 107px;
+        left: 197px;
+        fill: #fff;
+        display: none;
+    }
+
+    &__btn-down {
+        display: flex;
+        width: 170px;
+        padding: 10px;
+        outline: none;
+        word-break: break-all;
+        text-transform: uppercase;
+        background-color: rgb(153, 134, 117);
+        border: none;
+        border-radius: 3px;
+        border: 2px solid transparent;
+        transition: background-color 500ms ease-in-out;
+        margin: 0 0 80px 0;
+        word-break: break-all;
+
+        &:hover {
+            background-color: rgb(79, 72, 70);
+            box-sizing: border-box;
+        }
+
+        &:active {
+            background-color: rgb(153, 134, 117);
+        }
+    }
+}
+
+.latest__item-btn-inner {
+    width: 27px;
+    height: 27px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+.latest__item-btn-inner :hover {
+    fill: darkgoldenrod;
+    transition: fill 500ms ease-in-out;
+}
+
+.latest__item-btn-inner :hover {
+    fill: darkgoldenrod;
+    transition: fill 500ms ease-in-out;
+}
+
+.latest__item-btn-inner :active {
+    fill: black;
+}
+
+.latest__item-btn-inner :active {
+    fill: black;
+}
+
+.presentation {
+    display: flex;
+    justify-content: center;
+
+
+    &__video {
+        position: relative;
+        width: 199vw;
+    }
+
+    &__poster {
+        position: absolute;
+        width: 554px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__label {
+        position: relative;
+    }
+
+    &__btn-inner {
+        display: none;
+    }
+
+    &__btn-bg {
+        margin: 210px 0 0 0;
+
+    }
+
+    &__btn-img {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        margin: 210px 0 0 0;
+        fill: #fff;
+        transition: fill 450ms ease-in-out;
+
+        &:hover {
+            fill: rgb(147, 109, 39);
+        }
+
+        &:active {
+            fill: blanchedalmond;
+        }
+    }
+
+    &__title {
+        font-size: 30px;
+        font-family: "Raleway";
+        color: rgb(255, 255, 255);
+        line-height: 1.2;
+        text-align: center;
+        font-weight: 400;
+        margin: 38px 0 15px 0;
+    }
+
+    &__description {
+        font-size: 16px;
+        font-family: "Montserrat";
+        color: rgb(255, 255, 255);
+        line-height: 1.75;
+        text-align: center;
+        margin: 0 0 27px 0;
+    }
+
+    &__subtitle {
+        font-size: 14px;
+        font-family: "Montserrat";
+        color: rgb(199, 178, 153);
+        line-height: 1.714;
+    }
+}
+
+.video-play-btn--hide {
+    display: none;
+}
+
+.excellent {
+    background-image: url(../img/excellent-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 46px bottom;
+    display: flex;
+    justify-content: right;
+
+    &__content {
+        max-width: 660px;
+        margin: 0 25px 0 0;
+    }
+
+    &__title {
+        font-size: 30px;
+        font-family: "Raleway";
+        color: rgb(85, 85, 85);
+        line-height: 1.2;
+        font-weight: 400;
+        margin: 187px 0 25px 16px;
+        text-align: left;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        font-family: "Montserrat";
+        color: rgb(140, 140, 140);
+        line-height: 1.75;
+        padding: 0 0 0 8px;
+        margin: 0;
+    }
+
+    &__items {
+        margin: 31px 0 175px 106px;
+        padding: 0;
+    }
+
+    &__item {
+        list-style: none;
+        position: relative;
+        display: block;
+        font-size: 16px;
+        font-family: "Montserrat";
+        color: rgb(140, 140, 140);
+        line-height: 2;
+        margin: 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 5px;
+            left: -50px;
+            background-image: url(../img/excellent__item.svg);
+            width: 21px;
+            height: 21px;
+        }
+    }
+}
+
+.statistic {
+    background-image: url(../img/statistic-bg.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-position: center;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+    }
+
+    &__img {
+        fill: rgb(199, 178, 153);
+        margin: 67px 0 30px 0;
+    }
+
+    &__number {
+        font-size: 48px;
+        font-family: "Montserrat";
+        color: rgb(255, 255, 255);
+        line-height: 0.75;
+        text-align: center;
+        margin: 0;
+    }
+
+    &__subtitle {
+        font-size: 14px;
+        font-family: "Montserrat";
+        color: rgb(199, 178, 153);
+        text-transform: uppercase;
+        line-height: 1.429;
+        text-align: center;
+        margin: 15px 0 23px 0;
+    }
+
+    &__decor {
+        height: 2px;
+        width: 30px;
+        background-color: rgb(199, 178, 153);
+        margin: 0 0 62px 0;
+    }
+}
+
+.recent {
+    padding: 75px 0 75px 0;
+
+    &__title {
+        margin: 0 0 15px 0;
+    }
+
+    &__description {
+        width: 796px;
+        font-size: 16px;
+        font-family: "Raleway";
+        color: rgb(140, 140, 140);
+        line-height: 1.75;
+        text-align: center;
+        margin: 0 auto;
+        margin: 0 auto 33px auto;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__card {
+        background-color: rgb(255, 255, 255);
+        display: block;
+        width: 370px;
+        position: relative;
+        transition: background-color 500ms ease-in-out;
+
+        &:hover {
+            background-color: rgb(54, 47, 45);
+        }
+
+        &:hover .recent__card-img {
+            filter: blur(2px);
+            -webkit-filter: blur(2px);
+            transition: filter 500ms ease-in-out;
+        }
+
+        &-img {
+            display: block;
+            margin: 0 0 27px 0;
+        }
+
+        &-title {
+            font-size: 20px;
+            font-family: "Raleway";
+            color: rgb(54, 54, 54);
+            line-height: 1.2;
+            text-align: left;
+            font-weight: 600;
+            padding: 0 0 0 28px;
+        }
+
+        &:hover .recent__card-title {
+            color: rgb(199, 178, 153);
+        }
+
+        &-descripion {
+            font-size: 14px;
+            font-family: "Raleway";
+            color: rgb(140, 140, 140);
+            line-height: 1.571;
+            text-align: left;
+            margin: 13px 0 20px 0;
+            padding: 0 0 0 28px;
+            font-weight: 400;
+            width: 286px;
+        }
+
+        &:hover .recent__card-descripion {
+            color: rgb(247, 247, 247);
+        }
+
+        &-link {
+            font-size: 14px;
+            font-family: "Montserrat";
+            color: rgb(199, 178, 153);
+            line-height: 1.429;
+            text-align: left;
+            text-decoration: none;
+            position: relative;
+            margin: 0 0 27px 0;
+            padding: 0 0 0 28px;
+            display: block;
+
+            &::before {
+                content: "";
+                background-image: url(../img/recent-read.svg);
+                position: absolute;
+                width: 5px;
+                height: 8px;
+                top: 7px;
+                left: 112px;
+            }
+        }
+
+        &:hover .recent__date-top {
+            background-color: rgb(199, 178, 153);
+        }
+
+        &:hover .recent__date-bottom {
+            background-color: rgb(164, 141, 114);
+        }
+    }
+
+    &__date {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 17px;
+        left: 18px;
+
+        &-top {
+            font-size: 24px;
+            font-family: "Montserrat";
+            color: rgb(255, 255, 255);
+            line-height: 0.833;
+            text-align: center;
+            background-color: rgb(54, 54, 54);
+            padding: 11px;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            transition: background-color 400ms ease-in-out;
+        }
+
+        &-bottom {
+            font-size: 12px;
+            font-family: "Roboto";
+            color: rgb(255, 255, 255);
+            line-height: 1.667;
+            text-align: center;
+            padding: 0 14px 0 15px;
+            margin: 0;
+            background-color: rgb(37, 37, 37);
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            transition: background-color 400ms ease-in-out;
+        }
+    }
+
+    &__decore {
+        display: flex;
+        justify-content: center;
+        margin: 40px 0 0 0;
+
+        &-btn {
+            display: none;
+        }
+
+        &-img {
+            padding: 0 8px 0 0;
+            fill: rgb(209, 209, 209);
+            transition: fill 400ms ease-in;
+
+            &:hover {
+                fill: rgb(153, 134, 117);
+            }
+
+            &:active {
+                fill: black;
+                transition: fill 150ms ease-in;
+            }
+        }
+    }
+}
+
+.partner {
+    height: 495px;
+    background-image: url(../img/partner.jpg);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    background-size: cover;
+    &__title{
+        display: none;
+    }
+    &__link {
+        margin: 0 45px 0 45px;
+    }
+}
+
+.footer {
+    &__top {
+        background-color: rgb(25, 25, 25);
+        display: flex;
+        padding: 75px 0 75px 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        &-block-title {
+            width: 100%;
+            font-size: 24px;
+            font-family: "Raleway";
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            line-height: 1.2;
+            text-align: left;
+            margin: 22px 0 21px 1px;
+            display: block;
+        }
+
+        &-block-1 {
+            width: 262px;
+
+            &-description {
+                font-size: 14px;
+                font-family: "Montserrat";
+                color: rgb(85, 85, 85);
+                line-height: 1.714;
+                text-align: left;
+                margin: 23px 0 0 0;
+            }
+
+            &-link {
+                font-size: 14px;
+                font-family: "Montserrat";
+                color: rgb(209, 209, 209);
+                line-height: 1.429;
+                text-align: left;
+                text-decoration: none;
+                position: relative;
+                margin: 22px 0 0 0;
+                display: block;
+
+                &:hover .footer__top-block-1-link-img {
+                    fill: rgb(199, 178, 153);
+                }
+
+                &:hover {
+                    color: rgb(199, 178, 153);
+                }
+
+                &-img {
+                    position: absolute;
+                    top: 6px;
+                    left: 85px;
+                    fill: rgb(209, 209, 209);
+                }
+            }
+        }
+
+        &-block-2-3 {
+            width: 270px;
+        }
+
+        &-block-4 {
+            width: 272px;
+            height: 257px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+        &-block {
+            margin: 0 15px 0 16px;
+        }
+    }
+}
+
+.post-date {
+    &__inner {
+        &:hover .post-date__mounth {
+            color: rgb(255, 255, 255);
+        }
+
+        &:hover .post-date__description {
+            color: rgb(199, 178, 153);
+        }
+
+        &:hover .post-date__description-last {
+            color: rgb(199, 178, 153);
+        }
+        &:active .post-date__mounth {
+            color: rgb(255, 255, 255);
+            transition: color 150ms ease-in-out;
+        }
+
+        &:active .post-date__description {
+            color: rgb(255, 255, 255);
+            transition: color 150ms ease-in-out;
+        }
+
+        &:active .post-date__description-last {
+            color: rgb(255, 255, 255);
+            transition: color 150ms ease-in-out;
+        }
+    }
+
+    &__mounth {
+        font-size: 12px;
+        font-family: "Montserrat";
+        color: rgb(54, 54, 54);
+        line-height: 1.667;
+        text-align: left;
+        margin: 21px 0 0 4px;
+        display: block;
+        transition: color 350ms ease-in-out;
+    }
+
+    &__description {
+        font-size: 14px;
+        font-family: "Montserrat";
+        color: rgb(85, 85, 85);
+        line-height: 1.429;
+        text-align: left;
+        position: relative;
+        margin: 4px 0 35px 3px;
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        transition: color 350ms ease-in-out;
+        &-last {
+            font-size: 14px;
+            font-family: "Montserrat";
+            color: rgb(85, 85, 85);
+            line-height: 1.429;
+            text-align: left;
+            position: relative;
+            margin: 3px 0 0 3px;
+            display: block;
+            text-decoration: none;
+            transition: color 350ms ease-in-out
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: rgb(37, 37, 37);
+            width: 100%;
+            height: 1px;
+            top: 59px;
+            left: 0;
+            margin: 0 0 0 0;
+            display: block;
+        }
+    }
+}
+
+.twitter {
+    &__time {
+        font-size: 12px;
+        font-family: "Montserrat";
+        color: rgb(54, 54, 54);
+        line-height: 1.667;
+        text-align: left;
+        position: relative;
+        margin: 0 0 37px 5px;
+        display: block;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: rgb(37, 37, 37);
+            width: 100%;
+            height: 1px;
+            top: 23px;
+            left: 0;
+            margin: 0 0 0 0;
+        }
+
+        &-last {
+            font-size: 12px;
+            font-family: "Montserrat";
+            color: rgb(54, 54, 54);
+            line-height: 1.667;
+            text-align: left;
+            margin: 4px 0 0 5px;
+            display: block;
+        }
+    }
+
+    &__description {
+        font-size: 14px;
+        font-family: "Montserrat";
+        color: rgb(85, 85, 85);
+        line-height: 1.429;
+        text-align: left;
+        width: 100%;
+        margin: 0 0 0px 5px;
+        display: block;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: rgb(13, 102, 127);
+
+        &-2 {
+            color: rgb(149, 149, 149);
+            text-decoration: none;
+        }
+    }
+}
+
+.widget {
+    margin: 5px 0 0 5px;
+    &__img{
+        transition: filter 600ms ease-in-out;
+    }
+    &:hover .widget__img{
+        filter: blur(1px);
+        -webkit-filter: blur(2px);
+    }
+
+    &__btn {
+        display: none;
+    }
+} 
+.footer__general{
+    padding: 41px 0 41px;
+    background-color: rgb(17, 17, 17);
+    &-inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-items{
+        display: flex;
+        margin: 0;
+        padding: 0;        
+    }
+    &-item{
+        list-style: none;
+        margin: 0 0 0 0;
+        font-size: 13px;
+        font-family: "Montserrat";
+        color: rgb(85, 85, 85);
+        line-height: 1.538;
+        &--color{
+            color: rgb(149, 149, 149);
+            margin: 0 0 0 0;
+            font-size: 13px;
+            font-family: "Montserrat";
+            line-height: 1.538;
+        }     
+    }
+    &-faq{
+        list-style: none;
+        text-decoration: none;
+        line-height: 1.538;
+        color: rgb(164, 141, 114);
+        transition: color 400ms ease-in-out;
+        font-size: 13px;
+        font-family: "Montserrat";
+        margin: 0;
+        &:hover{
+            color: rgb(248, 247, 247);
+        }
+        &:active{
+            color: rgb(122, 174, 37);
+            transition: color 150ms ease-in-out;
+        }
+        text-transform: uppercase;
+    }
+    &-stroke{
+        list-style: none;
+        color: rgb(85, 85, 85);
+        margin: 0 7px 0 7px;
+    }
+}
+@media  (max-width: 1256px)  {
+    .container{
+        max-width: 1024px ;
+    }
+    .header{
+        max-width: 1256px;
+        min-height: 835px;
+        background-size: cover;
+        &__top-inner {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 0px 0 190px 0;
+        }
+        &__form{
+            order: 3;
+            width: 100%;
+            margin: 0 0 0 66px ;
+        }
+        &__content-container{
+            padding: 0 50px;
+        }
+        &__logo{
+            margin:0 25px 0 0;
+        }
+        &__decor {
+            margin: 190px 0 33px 0;
+        }
+    }
+    .section-preview{
+        padding: 40px 0 0 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 50px 0 50px;
+    }
+    .preview{
+        margin: 0 50px 50px 50px;
+    }
+    .logo{
+        order: 1;
+    }
+    .menu{
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding-top: 30px;
+        &__item{
+            background-color:black ;
+            width: 600px;
+            text-align: center;
+            padding: 6px 0 5px 0 ;
+            font-size: 18px;
+            margin: 0;
+            opacity: 0.7;
+            z-index: 1;    
+            &:hover{
+                background-color: rgb(54, 54, 54);
+            }
+        }
+        &__items{
+            position: absolute;
+            top: 40px;
+            left: -610px;
+            visibility: hidden;
+            flex-direction: column;
+            width: 0;
+            height: 0;
+            
+        }
+        &__mobile{
+            display: block;
+            background-image: url("../img/menu-mobile.svg");
+            width: 36px;
+            height: 36px;
+            margin: 0 30px 0 0;
+            background-repeat: no-repeat;
+           
+            &-checked:checked ~ .menu__mobile{
+                background-image: url(../img/menu-mobile2.svg);
+                height: 26px;
+                width: 36px;
+            }
+            &-checked:checked ~ .menu__items{
+                visibility: visible;   
+            }
+        }
+    }
+    .search {
+        top: -12px;
+        left: 86px;    
+        padding: 5px 15px;
+        opacity: 0.8;
+        background-color: #acacac;
+        width: 350px;
+        min-height: 38px;
+        font-size: 20px;
+    }
+    .realization{
+        &__bg-img {
+            width: 800px;
+            height: 300px;
+        }
+        &__title{
+            margin: 40px 0 20px 0;
+        }
+    }
+    .word-press{
+        &__inner {
+            margin: 0 45px 0 45px ;
+            justify-content: center;
+            flex-wrap: wrap;
+            &-txt{
+                width: 100%;
+            }
+        }
+        &__title{
+            text-align: center;
+        }
+        &__description{
+            text-align: center;
+        }
+        &__btn{
+            margin: 45px 0 0 0;
+        }
+    }
+    .latest{
+        &__items{
+            justify-content: center;
+        }
+        &__item{
+            margin: 0 50px 40px 50px;
+        }
+        &__btn-down{
+            margin: 0;
+        }
+    }
+    .presentation {
+        display: none;
+    }
+    .excellent {
+        background-position: 15px bottom;
+        &__content {
+            max-width: 430px;
+            margin: 0 30px 0 0;
+        }
+    
+        &__title {
+            font-size: 20px;
+            font-weight: 500;
+            margin: 75px 0 25px 16px;
+        }
+    
+        &__subtitle {
+            font-size: 16px;
+            line-height: 1.75;
+            padding: 0 0 0 6px;
+        }  
+        &__items {
+            margin: 20px 0 115px 75px;
+        }
+    
+        &__item {
+            list-style: none;
+            position: relative;
+            display: block;
+            font-size: 16px;
+            font-family: "Montserrat";
+            color: rgb(140, 140, 140);
+            line-height: 1.75;
+            margin: 0;
+    
+            &::before {
+                content: "";
+                position: absolute;
+                display: block;
+                top: 5px;
+                left: -50px;
+                background-image: url(../img/excellent__item.svg);
+                width: 21px;
+                height: 21px;
+            }
+        }
+    }
+    .recent{
+        &__cards{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__card{
+            margin: 0 50px;
+        }
+    }
+    .partner{
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+        &__img{
+            margin: 25px 55px;
+        }
+    }
+    .footer{
+        &__top-block{
+            margin: 0 80px 25px 80px;
+        }
+        &__general{
+            &-inner{
+                flex-direction: column;
+                align-items: center;
+            }
+            &-left{
+                margin: 0 0 25px 0;
+            }
+        }
+    }
+}
+@media (max-width: 800px) {
+    .header{
+        min-height: 178px;
+        padding: 0 0 15px 0;
+        &__top-inner{
+            margin: 0;
+        }
+        &__content{
+            display: none;
+        }
+        &__decor{
+            display: none;
+        }
+    }
+    .search {
+        top: -12px;
+        left: 86px;    
+        padding: 5px 15px;
+        opacity: 0.8;
+        background-color: #acacac;
+        width: 200px;
+        min-height: 38px;
+        font-size: 13px;
+    }
+    .menu__mobile{
+        margin: 0 10px 0 0 ;
+    }
+    .excellent {
+        background-image: none;
+        background-color: rgba(248, 243, 243, 0.493);
+        padding: 25px;
+        justify-content: center;
+        &__content{
+            margin: 0;
+        }
+        &__title {
+            font-size: 25px;
+            font-family: "Raleway";
+            color: rgb(0, 0, 0);
+            line-height: 1.2;
+            font-weight: 400;
+            margin: 15px 0 25px 0px;
+            text-align: center;
+        }
+        &__subtitle {
+            font-size: 15px;
+            color: rgb(148, 144, 144);
+            line-height: 1.55;
+            padding: 0 15px ;
+            text-align: center;
+        }
+        &__item {
+            color: rgb(148, 144, 144);
+        }
+    } 
+    .statistic{
+        background-size: cover;
+        &__content{
+            flex-wrap: wrap;
+        }
+        &__inner{
+            width: 100%;
+        }
+        &__img {
+            margin: 30px 0;
+        }
+    }
+    .footer{
+        &__top {
+            padding: 50px 0 75px 0;
+            justify-content: center;
+            &-block{
+                margin: 0 15px 15px 15px;
+            }
+        }
+    }
+    .section-preview{
+        padding: 20px 0 0 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 ;
+    }
+    .realization{
+        &__bg-img {
+            width: 480px;
+            height: 200px;
+        }
+        &__title{
+            margin: 20px 0 ;
+            padding: 0;
+            width: 100%;
+        }
+        &__description{
+            padding: 0;
+            margin: 0 0 20px 0 ;
+            width: 300px;
+        }
+        .section-preview{
+        padding: 40px 0 0 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 50px 0 50px;
+        }
+    }
+    .latest {
+        padding-bottom: 25px;
+        &__title {
+            margin: 22px 0 12px 0;
+        }
+        &__description {
+            font-size: 14px;
+            line-height: 1.45;
+            width: 100%;
+            margin: 0 0 20px 0;
+        }
+        &__buttons {
+           flex-wrap: wrap;
+            margin: 0 15px;
+        }
+        &__button{
+            margin: 0 5px 15px 5px;
+        }
+        &__item{
+            margin: 0 15px 20px 15px;
+        }
+        &__btn-down{
+            margin: 15px 0 0 0 ;
+        }
+    }
+    .preview{
+        margin: 0 50px 50px 50px;
+    }
+    .logo{
+        order: 1;
+        padding-left: 15px;
+    }
+    .menu{
+        &__item{
+            width: 200px;
+        }
+        &__items{
+            top: 40px;
+            left: -210px;
+        }
+    }
+    .word-press{
+        &__inner {
+            margin: 0 45px 0 45px ;
+            justify-content: center;
+            flex-wrap: wrap;
+            &-txt{
+                width: 100%;
+            }
+        }
+        &__title{
+            text-align: center;
+        }
+        &__description{
+            text-align: center;
+        }
+        &__btn{
+            margin: 45px 0 0 0;
+        }
+    }
+    .presentation {
+        display: none;
+    }
+    .recent{
+        &__cards{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__card{
+            margin: 0 50px 25px 0;
+        }
+        &__description{
+            width: 100%;
+        }
+    }
+    .partner{
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+        &__img{
+            margin: 25px 55px;
+        }
+    }
+}
+@media (max-width: 450px) {
+    .realization{
+        &__bg-img {
+            width: 300px;
+            height: 120px;
+        }
+    }
+    .latest__item {
+        &__item{
+            margin: 0 0 20px 0;
+        }
+    }
+    .latest__button{
+        margin: 0 55px 15px 55px;
+    }
+    .recent{
+        &__card{
+            margin: 0 0 20px 0;
+        }
+    }
+    .partner__link {
+        margin: 0 ;
+    }
+}
+
